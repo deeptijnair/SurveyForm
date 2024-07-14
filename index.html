@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <h1>Survey Form</h1>
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div >
+      <p id="description">Thank you for taking your time to fill this survey!</p>
+    </div>
+    
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label for="number" id="number-label">Number: <input id="number" type="number" pattern="[0-9]" min="1" max="10" placeholder="Enter your number" required/></label>
+      </fieldset>
+      <fieldset>
+          <input type="radio" id="radio-one" name="fav_language" value="HTML"><label for="html">HTML</label>
+            <input type="radio" id="radio-two" name="fav_language" value="CSS"><label for="css">CSS</label>
+        <select id="dropdown">
+          <option>(Not selected)</option>
+          <option>1</option>
+          <option>2</option>
+          <label for="details">Enter anything that you may want to add (optional)<textarea id="details"></textarea></label>
+        <<input id="promotional-emails" type="checkbox" value="promotions"><label for="promotional-emails" >I would like to receive promotional emails</label>
+        <input id="terms-and-conditions" type="checkbox" value="terms"><label for="terms-and-conditions" >I agree to the <a href="">terms and conditions</label>
+      </fieldset>
+      <input id="submit"type="submit">
+      
+    </form>
+
+  </body>
+
+</html
